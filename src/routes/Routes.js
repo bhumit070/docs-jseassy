@@ -1,7 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from '../components/Home'
-import About from '../components/About'
+import String from '../components/String'
+import Localstorage from '../components/LocalStorage'
+import Objects from '../components/Object'
 const Routes = () => {
   return (
     <Router>
@@ -11,8 +13,18 @@ const Routes = () => {
         </Route>
       </Switch>
       <Switch>
-        <Route path="/about" exact>
-          <About />
+        <Route path="/strings" exact>
+          <String />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/localStorage" exact>
+          <Localstorage />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/objects" exact>
+          <Objects />
         </Route>
       </Switch>
     </Router>
