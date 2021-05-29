@@ -1,10 +1,19 @@
-import { Jumbotron } from 'reactstrap'
+import { Jumbotron, Button } from 'reactstrap'
+import { useHistory } from 'react-router-dom'
+
 const Title = ({ title, description }) => {
+  let history = useHistory()
+
   return (
     <div>
       <Jumbotron>
         <h1 className="display-3"> {title} </h1>
         <p className="lead">{description}</p>
+        <p className="lead">
+          <Button color="primary" onClick={() => history.push('/')}>
+            Goto Home
+          </Button>
+        </p>
         <hr className="my-2" />
       </Jumbotron>
     </div>

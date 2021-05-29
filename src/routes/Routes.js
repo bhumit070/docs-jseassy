@@ -4,6 +4,8 @@ import Home from '../components/Home'
 import String from '../components/String'
 import Localstorage from '../components/LocalStorage'
 import Objects from '../components/Object'
+import Array from '../components/Array'
+
 const Routes = () => {
   return (
     <Router>
@@ -25,6 +27,11 @@ const Routes = () => {
       <Switch>
         <Route path="/objects" exact>
           <Objects />
+        </Route>
+      </Switch>
+      <Switch>
+        <Route path="/arrays" exact>
+          <Array />
         </Route>
       </Switch>
     </Router>
