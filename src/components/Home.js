@@ -1,6 +1,9 @@
 import { Card, CardTitle, CardText, CardSubtitle, CardBody } from 'reactstrap'
 import { providedObjects } from '../utils/objects'
+import GitHubIcon from '@material-ui/icons/GitHub'
 import { Link } from 'react-router-dom'
+import '../css/home.css'
+import NpmLogo from '../images/npm_logo.png'
 const Home = () => {
   return (
     <div>
@@ -40,6 +43,20 @@ const Home = () => {
               })}
             </div>
           </CardText>
+          <div className="links-container text-center">
+            <a href="https://github.com/bhumit070/jseassy" target="blank">
+              <GitHubIcon fontSize="large" />
+            </a>
+            <a href="https://www.npmjs.com/package/jseassy" target="blank">
+              <img
+                src={NpmLogo}
+                alt="npm logo"
+                height="50px"
+                width="100px"
+                className="mt-3"
+              />
+            </a>
+          </div>
         </CardBody>
       </Card>
     </div>

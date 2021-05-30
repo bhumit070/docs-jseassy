@@ -1,0 +1,14 @@
+.links-container {
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+  flex-direction: column;
+}
+
+.links-container > * {
+  margin: 5px;
+}
+
+.links-container > a {
+  color: #333 !important;
+}

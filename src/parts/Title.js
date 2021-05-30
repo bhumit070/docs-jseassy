@@ -10,9 +10,11 @@ const Title = ({ title, description }) => {
         <h1 className="display-3"> {title} </h1>
         <p className="lead">{description}</p>
         <p className="lead">
-          <Button color="primary" onClick={() => history.push('/')}>
-            Goto Home
-          </Button>
+          <div className="text-center">
+            <Button color="primary" onClick={() => history.push('/')}>
+              Goto Home
+            </Button>
+          </div>
         </p>
         <hr className="my-2" />
       </Jumbotron>
