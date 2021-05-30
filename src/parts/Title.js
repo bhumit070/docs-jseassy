@@ -7,8 +7,10 @@ const Title = ({ title, description }) => {
   return (
     <div>
       <Jumbotron>
-        <h1 className="display-3"> {title} </h1>
-        <p className="lead">{description}</p>
+        <div className="text-center">
+          <h1 className="display-3"> {title} </h1>
+          <p className="lead">{description}</p>
+        </div>
         <p className="lead">
           <div className="text-center">
             <Button color="primary" onClick={() => history.push('/')}>
