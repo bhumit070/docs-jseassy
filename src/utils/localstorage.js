@@ -14,7 +14,7 @@ export const localstorage = [
     description: [
       'This method get value from the localstorage with given key.',
       "It will parse the data into json and returns it so you don't need to do it",
-      'If data does not found in localstorage it will return null',
+      'If data does not found in localstorage it will return false',
       'Usage:',
       'ls.get(key)',
       'example: ls.get(key)',

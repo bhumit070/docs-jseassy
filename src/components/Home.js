@@ -1,5 +1,5 @@
 import { Card, CardTitle, CardText, CardSubtitle, CardBody } from 'reactstrap'
-import { providedObjects } from '../utils/objects'
+import { providedObjects } from '../utils/provided.objects'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import { Link } from 'react-router-dom'
 import '../css/home.css'
@@ -25,7 +25,10 @@ const Home = () => {
             <div className="mt-3">
               {providedObjects.map((object, index) => {
                 return (
-                  <div key={index}>
+                  <div
+                    key={index}
+                    style={{ display: `${index > 0 ? '' : 'none'}` }}
+                  >
                     <p>
                       For{' '}
                       <Link to={object.to} style={{ textDecoration: 'none' }}>

@@ -5,35 +5,37 @@ import String from '../components/String'
 import Localstorage from '../components/LocalStorage'
 import Objects from '../components/Object'
 import Array from '../components/Array'
-
+import Sessions from '../components/Sessions'
+import { providedObjects } from '../utils/provided.objects'
+console.log(providedObjects)
 const Routes = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/strings" exact>
-          <String />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/localStorage" exact>
-          <Localstorage />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/objects" exact>
-          <Objects />
-        </Route>
-      </Switch>
-      <Switch>
-        <Route path="/arrays" exact>
-          <Array />
-        </Route>
-      </Switch>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+        </Switch>
+
+        <Switch>
+          <Route path="/strings" exact component={String} />
+        </Switch>
+
+        <Switch>
+          <Route path="/localStorage" exact component={Localstorage} />
+        </Switch>
+
+        <Switch>
+          <Route path="/objects" exact component={Objects} />
+        </Switch>
+
+        <Switch>
+          <Route path="/arrays" exact component={Array} />
+        </Switch>
+
+        <Switch>
+          <Route path="/sessions" exact component={Sessions} />
+        </Switch>
+      </Router>
     </Router>
   )
 }
