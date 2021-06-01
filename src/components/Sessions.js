@@ -2,8 +2,8 @@ import Title from '../parts/Title'
 import Description from '../parts/Description'
 import { sessions } from '../utils/sessions'
 const props = {
-  title: 'Objects Demo',
-  description: `import { obj } from 'jseassy'`,
+  title: 'Sessions Demo',
+  description: `import { ssn } from 'jseassy'`,
 }
 
 const Sessions = () => {
