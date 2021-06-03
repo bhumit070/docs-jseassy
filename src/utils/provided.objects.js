@@ -34,4 +34,10 @@ export const providedObjects = [
     to: '/sessions',
     component: 'Sessions',
   },
+  {
+    for: 'Location',
+    provide: 'lcn',
+    to: '/location',
+    component: 'Location',
+  },
 ]
