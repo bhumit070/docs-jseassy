@@ -7,6 +7,7 @@ import Objects from '../components/Object'
 import Array from '../components/Array'
 import Sessions from '../components/Sessions'
 import Location from '../components/Location'
+import NotFound from '../components/NotFound'
 import { providedObjects } from '../utils/provided.objects'
 console.log(providedObjects)
 const Routes = () => {
@@ -15,30 +16,13 @@ const Routes = () => {
       <Router>
         <Switch>
           <Route path="/" exact component={Home} />
-        </Switch>
-
-        <Switch>
           <Route path="/strings" exact component={String} />
-        </Switch>
-
-        <Switch>
           <Route path="/localStorage" exact component={Localstorage} />
-        </Switch>
-
-        <Switch>
           <Route path="/objects" exact component={Objects} />
-        </Switch>
-
-        <Switch>
           <Route path="/arrays" exact component={Array} />
-        </Switch>
-
-        <Switch>
           <Route path="/sessions" exact component={Sessions} />
-        </Switch>
-
-        <Switch>
           <Route path="/location" exact component={Location} />
+          <Route path="*" exact component={NotFound} />
         </Switch>
       </Router>
     </Router>
