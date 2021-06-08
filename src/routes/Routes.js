@@ -8,8 +8,6 @@ import Array from '../components/Array'
 import Sessions from '../components/Sessions'
 import Location from '../components/Location'
 import NotFound from '../components/NotFound'
-import { providedObjects } from '../utils/provided.objects'
-console.log(providedObjects)
 const Routes = () => {
   return (
     <Router>
