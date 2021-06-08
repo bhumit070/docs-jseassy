@@ -116,4 +116,65 @@ export const arrays = [
       'example: you pass arr.clone([4,2,3]) => you get => [4,3,2](cloned version)',
     ],
   },
+  {
+    name: 'remove',
+    description: [
+      'This method removes the provided value from array',
+      'Usage:',
+      'arr.remove(arr,value)',
+      'example: you pass arr.remove([1,2,3],2) => you get => [1,3]',
+      'It users arr.filter method behind the scenes',
+    ],
+  },
+  {
+    name: 'removeByKey',
+    description: [
+      'This method removes the object from array of objects and with provided key,value',
+      'Usage:',
+      'arr.removeByKey(array,key,value)',
+      'where array is array , key is key of object , and value is the value which you want to remove',
+      'suppose you have array like this',
+      `const array = [
+        {
+          id: 1,
+          name: 'John',
+        },
+        {
+          id: 6,
+          name: 'alley',
+        },
+        {
+          id: 15,
+          name: 'sam',
+        },
+        {
+          id: 2,
+          name: 'spiderman',
+        },
+        {
+          id: 23,
+          name: 'ironman',
+        },
+      ]`,
+      `example: you pass arr.remove(array,"id",23) => you get =>  [
+        {
+          id: 1,
+          name: 'John',
+        },
+        {
+          id: 6,
+          name: 'alley',
+        },
+        {
+          id: 15,
+          name: 'sam',
+        },
+        {
+          id: 2,
+          name: 'spiderman',
+        },
+      ]`,
+      'It users arr.filter method behind the scenes',
+    ],
+  },
 ]
