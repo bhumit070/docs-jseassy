@@ -40,4 +40,10 @@ export const providedObjects = [
     to: '/location',
     component: 'Location',
   },
+  {
+    for: 'Cookies',
+    provide: 'ck',
+    to: '/cookies',
+    component: 'Cookies',
+  },
 ]

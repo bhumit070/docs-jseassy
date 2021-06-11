@@ -7,6 +7,7 @@ import Objects from '../components/Object'
 import Array from '../components/Array'
 import Sessions from '../components/Sessions'
 import Location from '../components/Location'
+import Cookies from '../components/Cookies'
 import NotFound from '../components/NotFound'
 const Routes = () => {
   return (
@@ -20,6 +21,7 @@ const Routes = () => {
           <Route path="/arrays" exact component={Array} />
           <Route path="/sessions" exact component={Sessions} />
           <Route path="/location" exact component={Location} />
+          <Route path="/cookies" exact component={Cookies} />
           <Route path="*" exact component={NotFound} />
         </Switch>
       </Router>
