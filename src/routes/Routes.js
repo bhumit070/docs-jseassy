@@ -9,6 +9,7 @@ import Sessions from '../components/Sessions'
 import Location from '../components/Location'
 import Cookies from '../components/Cookies'
 import NotFound from '../components/NotFound'
+import FormData from '../components/FormData'
 const Routes = () => {
   return (
     <Router>
@@ -22,6 +23,7 @@ const Routes = () => {
           <Route path="/sessions" exact component={Sessions} />
           <Route path="/location" exact component={Location} />
           <Route path="/cookies" exact component={Cookies} />
+          <Route path="/formdata" exact component={FormData} />
           <Route path="*" exact component={NotFound} />
         </Switch>
       </Router>

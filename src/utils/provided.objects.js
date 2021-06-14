@@ -46,4 +46,10 @@ export const providedObjects = [
     to: '/cookies',
     component: 'Cookies',
   },
+  {
+    for: 'FormData',
+    provide: 'fd',
+    to: '/formdata',
+    component: 'FormData',
+  },
 ]
